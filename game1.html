@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>拼图</title>
+
+<link rel="stylesheet" href="css/pintu.css">
+<style type="text/css">
+	.all{width: 1007px;
+		height: 600px;
+		left: 50%;
+		top:50%;
+		margin-top:-300px;
+        margin-left:-505px;
+		background-image:url(img/背景3.jpg);
+		position: absolute;
+	}
+	.title{width:20%;
+		height: 10%;
+		padding-top: 10px;
+		margin-left: 4%;
+		font-size: 30px;
+		font-family: 幼圆;
+		font-weight: bolder;
+		color:#FFFFFF;
+		line-height: 75px;	
+		position: relative;
+	}
+	.butt{width:100%;
+		height:10%;
+		float: left;
+		margin-top: 10px;
+	}
+	.butt2{width: 100px;
+	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	text-alian:center;	
+}
+	.butt button{
+	  background:#95C8F1;
+	  background-image: -webkit-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -moz-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -ms-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -o-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: linear-gradient(to bottom, #83c8f6, #2980b9);
+	  -webkit-border-radius: 28;
+	  -moz-border-radius: 28;
+	  border-radius: 28px;
+	  font-family:幼圆;
+	  color: #BFDBF1;
+	  font-weight: bolder;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
+	  height: 30px;
+	  width: 100px;
+	}
+	.butt button:hover {
+	  background: #2980b9;
+	  background-image: -webkit-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -moz-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -ms-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -o-linear-gradient(top, #2980b9, #3498db);
+	  background-image: linear-gradient(to bottom, #2980b9, #3498db);
+	  color:#BFDBF1;
+	  text-decoration: none;
+	  height: 30px;
+	  width: 100px; 
+	}
+	.text{width:300px;
+		height: 75%;
+		float: left;
+		margin-left: 60px;
+		border-right: 1px solid #62A6DC;
+		margin-right: 60px;
+	}
+	.txt1{width: 100%;
+		height: 30px;
+		margin-top: 20px;
+		float: left;
+		font-family: 宋体;
+        font-size: 18px;
+		color: rgba(255,255,255,1.00);
+	}
+	.txt2{width: 100%;
+		height: 300px;
+		float: left;
+		color:#AEA7EB;
+		font-size: 18px;
+	}
+</style>
+
+</head>
+<body>
+
+	
+<div class="all">
+	<div class="title">
+		拼图游戏
+	</div>
+	<div class="text">
+		<div class="txt1">
+			猜猜这是哪种冬至的美食？
+		</div>
+		<div class="txt2">
+			
+		</div>
+	</div>
+	<div class="wrap">
+	<div class="btnBbox">
+		<button class="btn" type="button">开始</button>
+		<div class="selectbox">
+			<button class="text">简单</button>
+			<ul class="box">
+				<li>简单</li>
+				<li>中等</li>
+				<li>高难</li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="picBox">
+		<ul class="list"></ul>
+	</div>
+</div>
+	<div class="butt">
+		<div class="butt2">
+			<a href="food2.html"><button type="button">上一页</button></a>
+		</div>
+	</div>
+</div>
+	
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/pintu.js"></script>
+</body>
+</html>

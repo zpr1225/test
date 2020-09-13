@@ -2,28 +2,24 @@
 @import url(http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css);
 
 * {
-  -moz-box-sizing: border-box;
+  -moz-box-sizing:border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
-  position: relative
+  position:relative;
 }
 
 html,
 body {
   height: 100%;
 }
-
-body {
-}
-
 .csstransforms .cn-wrapper {
   font-size: 1em;
   width: 26em;
   height: 26em;
   overflow: hidden;
-  position: fixed;
+  position:fixed;
   z-index: 10;
   bottom: -13em;
   left: 50%;

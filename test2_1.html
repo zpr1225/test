@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自我检测</title>
+	<style type="text/css">
+		.all{width: 1007px;
+		height: 600px;
+		left: 50%;
+		top:50%;
+		margin-top:-300px;
+        margin-left:-505px;
+		background-image:url(img/背景3.jpg);
+		position: absolute;
+	}
+	.title{width:100%;
+		height: 10%;
+		padding-top: 10px;
+		margin-left: 4%;
+		font-size: 30px;
+		font-family: 幼圆;
+		font-weight: bolder;
+		color:#FFFFFF;
+		line-height: 75px;	
+		position: relative;
+	}
+	.list{width:25%;
+		height: 65%;
+		margin-top: 3%;
+		margin-left:4%;
+		float: left;
+		border-right: 1px solid #62A6DC;
+	}
+	.li{width:100%;
+		height:30px;
+		float: left;
+		font-family: 幼圆;
+		font-size: 24px;
+		text-align: center;
+		line-height: 25px;
+		margin-top:50px;
+		font-weight: bold;
+	}
+	.li a{text-decoration: none;
+		color: #FFFFFF;
+	}
+	.li a:hover{text-decoration: none;
+		color: #FFFFFF;
+		font-size: 28px;
+		font-family:幼圆;
+		text-shadow:5px 5px 5px #9FABD5;
+	}
+	.butt{width:100%;
+		height:10%;
+		float: left;
+		
+		margin-top: 3%;
+	}
+	.butt2{width: 100px;
+	height: 30px;
+	margin-left:auto;
+	margin-right:auto;
+	text-alian:center;	
+}
+	.butt button{
+	  background:#95C8F1;
+	  background-image: -webkit-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -moz-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -ms-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: -o-linear-gradient(top, #83c8f6, #2980b9);
+	  background-image: linear-gradient(to bottom, #83c8f6, #2980b9);
+	  -webkit-border-radius: 28;
+	  -moz-border-radius: 28;
+	  border-radius: 28px;
+	  font-family:幼圆;
+	  color: #BFDBF1;
+	  font-weight: bolder;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
+	  height: 30px;
+	  width: 100px;
+	}
+	.butt button:hover {
+	  background: #2980b9;
+	  background-image: -webkit-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -moz-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -ms-linear-gradient(top, #2980b9, #3498db);
+	  background-image: -o-linear-gradient(top, #2980b9, #3498db);
+	  background-image: linear-gradient(to bottom, #2980b9, #3498db);
+	  color:#BFDBF1;
+	  text-decoration: none;
+	  height: 30px;
+	  width: 100px; 
+	}
+	.test{width:50%;
+		height: 70%;
+		line-height: 25px;
+		float: left;
+		margin-left: 3%;
+		color:#FFFFFF;
+		font-family: 宋体;
+		font-size: 20px;
+		font-weight: bolder;
+		}
+	.butt3 {width: 75px;
+	  height: 30px;
+	  -webkit-border-radius: 4;
+	  -moz-border-radius: 4;
+	  border-radius: 4px;
+	  text-shadow: 0px 1px 0px #283966;
+	  -webkit-box-shadow: inset 0px 39px 0px -24px #A8C9EB;
+	  -moz-box-shadow: inset 0px 39px 0px -24px #A8C9EB;
+	  box-shadow: inset 0px 39px 0px -24px #A8C9EB;
+	  font-family: Arial;
+	  color: #ffffff;
+	  font-size: 16px;
+	  background:#8AB7E5;
+	  text-align: center;
+	  border: solid #4e6096 1px;
+	  text-decoration: none;
+	  }
+
+  .butt3:hover {color:#FFFFFF;
+	  background: #A8C9EB;
+	  text-decoration: none;
+	}
+	.res{width:500px;
+		height: 150px;
+		line-height: 32px;
+		font-size: 26px;
+		padding-top: 30px;
+		}
+	.res p{font-size:18px;
+		}
+	</style>
+</head>
+<body>
+	<div class="all">
+	<div class="title">
+		自我检测
+	</div>
+	<div class="list">
+		
+		<div class="li"><a href="custom1.html">南方习俗</a></div>
+		<div class="li"><a href="custom2.html">北方习俗</a></div>
+		<div class="li"><a href="video.html">视频介绍</a></div>
+		<div class="li"><a href="list.html">返回目录</a></div>
+	</div>
+	<div class="test">
+		<form>
+			<p>【判断题】北方冬至吃饺子是因纪念“医圣”扁鹊留下的。</p>
+			<p><input type="radio"  name ="practise" value="true">对</p>
+			<p><input type="radio"  name ="practise" value="false">错</p>
+			<p><input type="button" class="butt3" onClick="check()" value="提交"></p>
+		</form>
+		<div class="res">
+		</div>
+    </div>
+	<div class="butt">
+		<div class="butt2">
+			<a href="test2_2.html"><button type="button">下一题</button></a>
+		</div>
+		
+	</div>
+</div>
+
+<script>
+var result='false';
+function check(){
+var obj = document.getElementsByName("practise");
+var list = document.getElementsByClassName("test")[0];
+    for(var i=0; i<obj.length; i++){
+        if(obj[i].checked){
+			if(obj[i].value==result)
+            	list.getElementsByClassName("res")[0].innerHTML = "回答正确！<p>厉害哦*^_^*</p>";
+			else
+				list.getElementsByClassName("res")[0].innerHTML = "回答错误！<p>北方冬至吃饺子是因纪念“医圣”张仲景留下的。</p>";
+		}
+    }				
+}
+</script>
+</body>
+</html>
